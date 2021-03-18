@@ -108,8 +108,8 @@ h1 {
 
     background: blueviolet;
     // padding: 20px;
-    overflow: hidden;
-    width: 1920px;
+
+    overflow-x: scroll;
 
     h2 {
 
@@ -118,9 +118,10 @@ h1 {
 
     .row-1{
 
-      
+      width: 1920px;
+
       display:inline-block;
-      overflow: hidden;
+      
 
       
       
@@ -170,72 +171,16 @@ footer{
     font-size: 56px;
   }
   
-  .container2 {
-
-    background: blueviolet;
-    padding: 20px;
-    overflow: hidden;
-  }
-
-  .head-3{
-
-    width: 400px;
-    font-size: 56px;
-
-  }
-
-  .card {
-
-
-  }
   
-   }
-
+ }
+ 
    
-@include media-breakpoint-up(md) { 
+// @include media-breakpoint-up(md) { 
 
-  .container2 {
+// }
 
-    background: blueviolet;
-    padding: 20px;
-    overflow: hidden;
-  }
+// @include media-breakpoint-up(lg) {
 
-  .head-3{
-
-    width: 800px;
-    font-size: 62px;
-
-  }
-
-  .card {
-
-
-  }
+//   }
   
-   }
   
-
-@include media-breakpoint-up(lg) {
-
-  .container2 {
-
-    background: blueviolet;
-    padding: 20px;
-    overflow: hidden;
-  }
-
-  .head-3{
-
-    width: 1920px;
-    font-size: 62px;
-
-  }
-
-  .card {
-
-
-  }
-  
-   }
-
