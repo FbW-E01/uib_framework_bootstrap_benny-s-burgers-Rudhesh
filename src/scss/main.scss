@@ -1,2 +1,186 @@
 // This is where you can import other stylesheets or write your scss code
+
+$theme-colors:("primary":black, "secondary":blueviolet);
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+@font-face {
+    font-family: Frijole;
+    src: url(../fonts/frijole/Frijole-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: EmilysCandy;
+    src: url(../fonts/emilys-candy/EmilysCandy-Regular.ttf) format("truetype");
+}
+
+
+$color: black;
+
+$dark :blueviolet;
+
+$btn-primary:blueviolet;
+
+
+
+
+/* Modify the background color */ 
+          
+.navbar-custom { 
+  background-color: $color; 
+} 
+/* Modify brand and text color */ 
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text { 
+  color: $dark; 
+  
+  .navbar-toggler-icon {
+
+    color: white;
+  }
+
+} 
+
+* {
+
+  font-weight: 600;
+}
+
+h1 {
+
+  margin-top: 280px;
+}
+
+
+  .card-title {
+
+    font-family: Frijole;
+
+  }
+
+  h2 {
+
+    font-family: EmilysCandy;
+
+  }
+
+  .btn-primary {
+
+    background-color: $dark;
+  }
+
+  .container{
+
+     
+    
+
+    .circle {
+
+        width: 300px;
+    }
+
+
+
+    img {
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid $color;
+       
+
+    }
+
+    h2{
+
+        font-family: EmilysCandy;
+    }
+
+
+    p{
+
+        text-align: left;
+    }
+  }
+
+  .container2 {
+
+    background: blueviolet;
+    // padding: 20px;
+
+    overflow-x: scroll;
+
+    h2 {
+
+      text-align: center;
+    }
+
+    .row-1{
+
+      width: 1920px;
+
+      display:inline-block;
+      
+
+      
+      
+    }
+
+    .card {
+      display: inline-block;
+      width: 300px;
+      height: 100%;
+      align-self: center;
+      margin: 20px;
+      overflow: hidden;
+    }
+    
+
+    a{
+
+      border: purple 1px solid;
+      padding: 10px;
+      line-height: 1em;
+      font-weight: bold;
+    }
+    
+  }
+
+  .container3{
+
+    
+
+    
+   
+  }
+
+footer{
+
+  background-color: $color;
+  color: rgb(158, 158, 158);
+  padding: 15px;
+  text-align: end;
+
+}
+
+ @include media-breakpoint-down(sm) { 
+
+  .card-title {
+
+    font-size: 56px;
+  }
+  
+  
+ }
+ 
+   
+// @include media-breakpoint-up(md) { 
+
+// }
+
+// @include media-breakpoint-up(lg) {
+
+//   }
+  
+  
